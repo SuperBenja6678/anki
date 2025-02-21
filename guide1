@@ -1,0 +1,74 @@
+# App Blueprint Context File
+
+---
+
+## **1. Project Breakdown**
+
+### **App Name:** AnkiAi 
+### **Platform:** Web  
+### **App Summary:**  
+AnkiFlash Creator is a web-based application designed to streamline the creation of Anki flashcards from uploaded images and PDFs. The app leverages OCR (Optical Character Recognition) to extract text, detect questions and answers, and automatically generate flashcards in Anki-compatible formats. Users can upload files, preview extracted content, choose between Basic or Cloze Deletion card types, and export the flashcards as `.apkg` files for seamless integration with Anki. The app supports multiple languages and provides a user-friendly interface with drag-and-drop functionality, making it ideal for students, educators, and professionals looking to create study materials efficiently. the app will use openai chatgpt api to generate the questions and answers.
+
+### **Primary Use Case:**  
+Productivity tool for creating and exporting Anki flashcards from uploaded files.
+
+
+---
+
+## **2. Core Features**
+
+### **File Upload and Processing**  
+- **File Types:** JPEG, PNG, PDF.  
+- **Drag-and-Drop:** Intuitive file upload interface.  
+- **Preview:** Display extracted text and questions/answers before conversion.  
+
+### **OCR and Text Extraction**  
+- **OCR Library:** Tesseract OCR for text extraction from images and PDFs.  
+- **Question Detection:** Identify multiple-choice questions and answers.  
+- **Language Support:** Arabic, English, and other languages.  
+
+### **Card Customization**  
+- **Card Types:** Basic (Front/Back) and Cloze Deletion.  
+- **Tags and Decks:** Allow users to specify or create new decks and apply tags.  
+
+### **Export and Download**  
+- **Export Format:** Generate `.apkg` files for Anki import.  
+- **Preview Cards:** Show how cards will look in Anki before export.  
+
+### **Error Handling and Manual Editing**  
+- **Manual Corrections:** Provide an interface for users to edit extracted text if OCR fails or produces inaccuracies.  
+
+---
+
+## **3. User Flow**
+
+1. **Login/Sign Up (Optional):**  
+   - Users log in or continue as guests.  
+2. **Upload File:**  
+   - Drag-and-drop or select files (JPEG, PNG, PDF).  
+3. **OCR Processing:**  
+   - Backend extracts text, detects questions, and identifies answers.  
+4. **Text Review:**  
+   - Preview extracted content and make corrections if needed.  
+5. **Deck & Card Options:**  
+   - Choose card type (Basic or Cloze), add tags, and select/create a deck.  
+6. **Export:**  
+   - Generate `.apkg` file and provide a preview of the cards.  
+7. **Download:**  
+   - Download the `.apkg` file and import it into Anki.  
+
+---
+
+## **4. Design and UI/UX**
+
+### **Visual Design Guidelines**  
+- **Color Palette:** Clean and minimal (e.g., light gray, white, and blue accents).  
+- **Typography:** Sans-serif fonts (e.g., Inter or Roboto) for readability.  
+- **Icons:** Use Material Icons or similar for intuitive navigation.  
+
+### **UI/UX Guidelines**  
+- **Drag-and-Drop:** Highlight the drop zone when files are dragged over.  
+- **Preview Section:** Display extracted text in a scrollable, editable box.  
+- **Card Customization:** Use dropdowns and checkboxes for card type and tag selection.  
+- **Error Handling:** Show clear error messages and provide an easy way to edit text.  
+
